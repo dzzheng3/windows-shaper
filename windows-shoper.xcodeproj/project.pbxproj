@@ -7,13 +7,16 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F431C28D1F80672500DFB8EE /* Wage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F431C28C1F80672500DFB8EE /* Wage.swift */; };
+		F431C28E1F80680900DFB8EE /* Wage.swift in Sources */ = {isa = PBXBuildFile; fileRef = F431C28C1F80672500DFB8EE /* Wage.swift */; };
 		F499E7161F8003BA00C56914 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F499E7151F8003BA00C56914 /* AppDelegate.swift */; };
-		F499E7181F8003BA00C56914 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F499E7171F8003BA00C56914 /* ViewController.swift */; };
+		F499E7181F8003BA00C56914 /* MainVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F499E7171F8003BA00C56914 /* MainVC.swift */; };
 		F499E71B1F8003BA00C56914 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F499E7191F8003BA00C56914 /* Main.storyboard */; };
 		F499E71D1F8003BA00C56914 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F499E71C1F8003BA00C56914 /* Assets.xcassets */; };
 		F499E7201F8003BA00C56914 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F499E71E1F8003BA00C56914 /* LaunchScreen.storyboard */; };
 		F499E72B1F8003BA00C56914 /* windows_shoperTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F499E72A1F8003BA00C56914 /* windows_shoperTests.swift */; };
 		F499E7361F8003BA00C56914 /* windows_shoperUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F499E7351F8003BA00C56914 /* windows_shoperUITests.swift */; };
+		F499E7461F800E5300C56914 /* CurrencyTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F499E7451F800E5300C56914 /* CurrencyTextField.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -34,9 +37,10 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		F431C28C1F80672500DFB8EE /* Wage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Wage.swift; sourceTree = "<group>"; };
 		F499E7121F8003BA00C56914 /* windows-shoper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "windows-shoper.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F499E7151F8003BA00C56914 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		F499E7171F8003BA00C56914 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F499E7171F8003BA00C56914 /* MainVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainVC.swift; sourceTree = "<group>"; };
 		F499E71A1F8003BA00C56914 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F499E71C1F8003BA00C56914 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		F499E71F1F8003BA00C56914 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -47,6 +51,7 @@
 		F499E7311F8003BA00C56914 /* windows-shoperUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "windows-shoperUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F499E7351F8003BA00C56914 /* windows_shoperUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = windows_shoperUITests.swift; sourceTree = "<group>"; };
 		F499E7371F8003BA00C56914 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F499E7451F800E5300C56914 /* CurrencyTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyTextField.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -74,6 +79,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F431C28B1F8066D500DFB8EE /* model */ = {
+			isa = PBXGroup;
+			children = (
+				F431C28C1F80672500DFB8EE /* Wage.swift */,
+			);
+			path = model;
+			sourceTree = "<group>";
+		};
 		F499E7091F8003BA00C56914 = {
 			isa = PBXGroup;
 			children = (
@@ -97,8 +110,10 @@
 		F499E7141F8003BA00C56914 /* windows-shoper */ = {
 			isa = PBXGroup;
 			children = (
+				F431C28B1F8066D500DFB8EE /* model */,
+				F499E7441F800E1600C56914 /* controller */,
+				F499E7431F800DFF00C56914 /* views */,
 				F499E7151F8003BA00C56914 /* AppDelegate.swift */,
-				F499E7171F8003BA00C56914 /* ViewController.swift */,
 				F499E7191F8003BA00C56914 /* Main.storyboard */,
 				F499E71C1F8003BA00C56914 /* Assets.xcassets */,
 				F499E71E1F8003BA00C56914 /* LaunchScreen.storyboard */,
@@ -123,6 +138,22 @@
 				F499E7371F8003BA00C56914 /* Info.plist */,
 			);
 			path = "windows-shoperUITests";
+			sourceTree = "<group>";
+		};
+		F499E7431F800DFF00C56914 /* views */ = {
+			isa = PBXGroup;
+			children = (
+				F499E7451F800E5300C56914 /* CurrencyTextField.swift */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		F499E7441F800E1600C56914 /* controller */ = {
+			isa = PBXGroup;
+			children = (
+				F499E7171F8003BA00C56914 /* MainVC.swift */,
+			);
+			path = controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,7 +290,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F499E7181F8003BA00C56914 /* ViewController.swift in Sources */,
+				F499E7461F800E5300C56914 /* CurrencyTextField.swift in Sources */,
+				F431C28D1F80672500DFB8EE /* Wage.swift in Sources */,
+				F499E7181F8003BA00C56914 /* MainVC.swift in Sources */,
 				F499E7161F8003BA00C56914 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -269,6 +302,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F499E72B1F8003BA00C56914 /* windows_shoperTests.swift in Sources */,
+				F431C28E1F80680900DFB8EE /* Wage.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

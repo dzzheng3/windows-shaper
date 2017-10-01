@@ -33,4 +33,7 @@ class windows_shoperTests: XCTestCase {
         }
     }
     
+    func testGetHours(){
+        XCTAssert(Wage.getHours(forWage: 25, andprice: 100)==4)
+    }
 }
